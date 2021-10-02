@@ -9,8 +9,10 @@
     </h1>
 
     <p>
-        <%= content.body %>
+        <%= content.body.slice(0,100).concat("..."); %>
+        <a href="/posts/<%= content.title %>">Read more</a>
     </p>
+
 
 <% }); %>
 
